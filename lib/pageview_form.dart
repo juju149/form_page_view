@@ -21,8 +21,8 @@ class PageviewForm extends StatefulWidget {
   final bool? showBackButton;
   final bool? appBarCenterTitle;
   final double? appBarElevation;
-  final Color? appBarbackgroundColor;
-  final double? appBarheight;
+  final Color? appBarBackgroundColor;
+  final double? appBarHeight;
   final TextStyle? appBarTextStyle;
   final Color? progressIndicatorColor;
   final Color? progressIndicatorBackgroundColor;
@@ -44,8 +44,8 @@ class PageviewForm extends StatefulWidget {
     this.buttonTextStyle,
     this.appBarCenterTitle = false,
     this.appBarElevation = 4,
-    this.appBarbackgroundColor = Colors.white,
-    this.appBarheight = 56,
+    this.appBarBackgroundColor = Colors.white,
+    this.appBarHeight = 56,
     this.progressIndicatorColor,
     this.progressIndicatorBackgroundColor,
     this.appBarTextStyle,
@@ -114,8 +114,8 @@ class _PageviewFormState extends State<PageviewForm> {
           ? AppBar(
               centerTitle: widget.appBarCenterTitle ?? false,
               elevation: widget.appBarElevation ?? 4,
-              backgroundColor: widget.appBarbackgroundColor ?? Colors.white,
-              toolbarHeight: widget.appBarheight ?? 56,
+              backgroundColor: widget.appBarBackgroundColor ?? Colors.white,
+              toolbarHeight: widget.appBarHeight ?? 56,
               leading: widget.showBackButton!
                   ? IconButton(
                       onPressed: () {

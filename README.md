@@ -13,6 +13,20 @@ Circular indicator:
 Linear indicator:
 ![Example screenshot](assets/Screenshot_2023-05-20-22-05-10-030_com.example.pageview_form_test.jpg)
 
+## Platforms supported
+
+| Android | iOS | Web | MacOS | Windows | Linux |
+|:-------:|:---:|:---:|:-----:|:-------:|:-----:|
+|✅|✅|✅|✅|✅|✅|
+
+## Features
+
+- Create a form with a page view and a progress bar
+- Navigate between pages using the progress bar or the back button
+- Customize the appearance of the form
+- Customize the progress indicator
+- Customize the button widget
+
 ## Installation
 
 Add the following dependency to your `pubspec.yaml` file:
@@ -82,13 +96,51 @@ Refer to the provided usage **'examples'** in the example folder for more detail
 | showBackButton | bool? | Optional. Specifies whether to show the back button on the app bar. Default is `true`. |
 | appBarCenterTitle | bool? | Optional. Specifies whether to center the title on the app bar. Default is `false`. |
 | appBarElevation | double? | Optional. The elevation of the app bar. Default is `4`. |
-| appBarbackgroundColor | Color? | Optional. The background color of the app bar. Default is `Colors.white`. |
-| appBarheight | double? | Optional. The height of the app bar. Default is `56`. |
+| appBarBackgroundColor | Color? | Optional. The background color of the app bar. Default is `Colors.white`. |
+| appBarHeight | double? | Optional. The height of the app bar. Default is `56`. |
 | progressIndicatorColor | Color? | Optional. The color of the progress indicator. If not specified, it uses the primary color of the theme. |
 | progressIndicatorBackgroundColor | Color? | Optional. The background color of the progress indicator. Default is `Colors.grey[300]`. |
 | progressIndicatorSize | double? | Optional. The size of the progress indicator. Default is `40`. |
 | progressIndicatorStrokeWidth | double? | Optional. The stroke width of the progress indicator. Default is `4`. |
 | controller | PageController | Required. The page controller for controlling the navigation in the pages. |
+
+
+## Customization
+
+### Form widget
+
+You can customize the form widget by providing the following parameters:
+
+- **'padding'**: The padding around the form widget.
+- **'backgroundColor'**: The background color of the form widget.
+
+### App bar
+
+You can customize the app bar by providing the following parameters:
+
+- **'showAppBar'**: Specifies whether to show the app bar. Default is `true`.
+- **'showBackButton'**: Specifies whether to show the back button on the app bar. Default is `true`.
+- **'appBarCenterTitle'**: Specifies whether to center the title on the app bar. Default is `false`.
+- **'appBarElevation'**: The elevation of the app bar. Default is `4`.
+- **'appBarBackgroundColor'**: The background color of the app bar. Default is `Colors.white`.
+- **'appBarHeight'**: The height of the app bar. Default is `56`.
+
+### Progress indicator
+
+You can customize the progress indicator by providing a **'ProgressIndicatorType'** to the **'progress'** parameter. The following types are available:
+
+- **ProgressIndicatorType.linear**: A linear progress indicator that fills the progress bar as the user navigates between pages.
+- **ProgressIndicatorType.circular**: A circular progress indicator that fills the progress bar as the user navigates between pages.
+
+### Button widget
+
+You can customize the button widget by providing a **'ButtonStyle'** to the **'buttonStyle'** parameter. This allows you to customize the button widget with any style you want.
+
+You can also customize the button widget by providing the following parameters:
+
+- **'buttonHeight'**: The height of the button widget. Default is `50`.
+- **'buttonWidth'**: The width of the button widget. Default is `double.infinity`.
+- **'buttonTextStyle'**: The text style of the button widget.
 
 ## Authors
 
