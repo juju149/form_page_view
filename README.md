@@ -7,7 +7,7 @@ Pageview Form is a Flutter package that allows you to create a form with a page 
 | Circular indicator | Linear indicator |
 |-------|---|
 | ![Example screenshot](assets/Screenshot_2023-05-20-22-05-03-030_com.example.pageview_form_test.jpg) | ![Example screenshot](assets/Screenshot_2023-05-20-22-04-51-028_com.example.pageview_form_test.jpg) |
-| ![Example screenshot](assets/Screenrecorder-2023-05-20-22-03-32-535=6.gif) | ![Example screenshot](assets/Screenrecorder-2023-05-20-22-03-32-538.gif) |
+| ![Example screenshot](assets/Screenrecorder-2023-05-20-22-02-55-536.gif) | ![Example screenshot](assets/Screenrecorder-2023-05-20-22-03-32-538.gif) |
 
 
 ## Platforms supported
