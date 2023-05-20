@@ -11,7 +11,7 @@ Circular indicator:
 ![Example screenshot](assets/Screenshot_2023-05-20-22-05-03-030_com.example.pageview_form_test.jpg)
 
 Linear indicator:
-![Example screenshot](assets/Screenshot_2023-05-20-22-05-10-030_com.example.pageview_form_test.jpg)
+![Example screenshot](assets/Screenshot_2023-05-20-22-04-51-028_com.example.pageview_form_test.jpg)
 
 ## Platforms supported
 
