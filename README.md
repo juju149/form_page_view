@@ -4,8 +4,8 @@ Pageview Form is a Flutter package that allows you to create a form with a page 
 
 ## Demo
 
-![Example screenshot](assets/Screenrecorder-2023-05-20-22-02-55-536.mp4)
-![Example screenshot](assets/Screenrecorder-2023-05-20-22-03-32-538.mp4)
+![Example screenshot](assets/Screenrecorder-2023-05-20-22-03-32-538.gif)
+![Example screenshot](assets/Screenrecorder-2023-05-20-22-03-32-538.gif)
 
 Circular indicator:
 ![Example screenshot](assets/Screenshot_2023-05-20-22-05-03-030_com.example.pageview_form_test.jpg)
