@@ -145,4 +145,3 @@ You can also customize the button widget by providing the following parameters:
 ## Authors
 
 - [@juju149](https://www.github.com/juju149)
-
