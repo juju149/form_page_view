@@ -1,8 +1,8 @@
 name: pageview_form
-version: 1.0.0
+version: 0.1.0
 description: A Flutter package for creating a page view form with progress bar.
-homepage: https://github.com/your-repo/page_view_form
-documentation: https://github.com/your-repo/page_view_form#readme
+homepage: https://github.com/juju149/pageview_form/tree/main
+documentation: https://github.com/juju149/pageview_form/tree/main
 license: MIT
 email: julienmercier149@gmail.com
 environment:
