@@ -51,9 +51,9 @@ final lastNameController = TextEditingController();
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
 
-  // Create a list of PageFormModel objects representing the form pages
+  // Create a list of FormPageModel objects representing the form pages
   final pages = [
-    PageFormModel(
+    FormPageModel(
       formKey: formKeyPage1,
       title: 'Page 1',
       textButton: 'Next',
@@ -77,7 +77,7 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
     ),
-    PageFormModel(
+    FormPageModel(
       formKey: formKeyPage2,
       title: 'Page 2',
       textButton: 'Next',
@@ -113,7 +113,7 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
     ),
-    PageFormModel(
+    FormPageModel(
       formKey: formKeyPage3,
       title: 'Page 3',
       textButton: 'Next',
@@ -137,7 +137,7 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
     ),
-    PageFormModel(
+    FormPageModel(
       formKey: formKeyPage4,
       title: 'Page 4',
       textButton: 'Submit',

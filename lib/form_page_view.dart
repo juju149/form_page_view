@@ -9,7 +9,7 @@ import 'package:form_page_view/models/form_page_model.dart';
 class FormPageView extends StatefulWidget {
   // Paramètres optionnels pour personnaliser l'apparence et le comportement du formulaire
   final ProgressIndicatorType? progress;
-  final List<PageFormModel> pages;
+  final List<FormPageModel> pages;
   final Function() onFormSubmitted;
   final EdgeInsetsGeometry? padding;
   final Color? backgroundColor;

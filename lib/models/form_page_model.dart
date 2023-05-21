@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Represents a page model for the form.
-class PageFormModel {
+class FormPageModel {
   /// The title of the page.
   final String? title;
 
@@ -23,7 +23,7 @@ class PageFormModel {
   /// The key for the form.
   final GlobalKey<FormState>? formKey;
 
-  /// Creates a new instance of [PageFormModel].
+  /// Creates a new instance of [FormPageModel].
   ///
   /// [title] (optional) - The title of the page.
   /// [form] (required) - The form widget for this page.
@@ -31,7 +31,7 @@ class PageFormModel {
   /// [onPressed] (optional) - The callback function executed when the button is pressed.
   /// [buttonStyle] (optional) - The style applied to the button.
   /// [formKey] (optional) - The key for the form.
-  PageFormModel({
+  FormPageModel({
     this.title,
     required this.form,
     this.textButton,

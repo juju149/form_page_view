@@ -41,11 +41,11 @@ import 'package:form_page_view/form_page_view.dart';
 
 ## Usage
 
-Create a list of page models (**'PageFormModel'**) to define the pages in your form. Each page model should contain a **'formKey'** for form validation and a **'form'** that represents the page content.
+Create a list of page models (**'FormPageModel'**) to define the pages in your form. Each page model should contain a **'formKey'** for form validation and a **'form'** that represents the page content.
 
 ```dart
-final List<PageFormModel> pages = [
-  PageFormModel(
+final List<FormPageModel> pages = [
+  FormPageModel(
     formKey: GlobalKey<FormState>(),
     form: YourFormWidget(),
     title: 'Page 1',
