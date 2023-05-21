@@ -1,7 +1,9 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
-import 'package:pageview_form/enum/progress_enum.dart';
-import 'package:pageview_form/models/page_form_model.dart';
-import 'package:pageview_form/pageview_form.dart';
+import 'package:form_page_view/enum/progress_enum.dart';
+import 'package:form_page_view/models/form_page_model.dart';
+import 'package:form_page_view/form_page_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -175,20 +177,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ButtonStyle style = ButtonStyle(
-      shape: MaterialStateProperty.all<OutlinedBorder>(
-        RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-          side: BorderSide.none,
-        ),
-      ),
-      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-      padding: MaterialStateProperty.all(
-          const EdgeInsets.symmetric(horizontal: 0, vertical: 0)),
-      elevation: MaterialStateProperty.all<double>(0),
-    );
-
-    return PageviewForm(
+    return FormPageView(
       controller: PageController(),
       backgroundColor: const Color(0xFFF3F4F9),
       progress: ProgressIndicatorType.circular,

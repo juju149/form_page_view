@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=C:\Src\Packages\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Src\Projects\Flutter\form_package\pageview_form"
+export "FLUTTER_APPLICATION_PATH=C:\Src\Projects\Flutter\form_package\form_page_view"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=0.0.1"

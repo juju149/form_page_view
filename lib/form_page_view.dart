@@ -1,12 +1,12 @@
 // Importation des packages et des fichiers nécessaires pour le widget
-library pageview_form;
+library form_page_view;
 
 import 'package:flutter/material.dart';
-import 'package:pageview_form/enum/progress_enum.dart';
-import 'package:pageview_form/models/page_form_model.dart';
+import 'package:form_page_view/enum/progress_enum.dart';
+import 'package:form_page_view/models/form_page_model.dart';
 
-// Définition du widget PageviewForm
-class PageviewForm extends StatefulWidget {
+// Définition du widget FormPageView
+class FormPageView extends StatefulWidget {
   // Paramètres optionnels pour personnaliser l'apparence et le comportement du formulaire
   final ProgressIndicatorType? progress;
   final List<PageFormModel> pages;
@@ -30,7 +30,7 @@ class PageviewForm extends StatefulWidget {
   final double? progressIndicatorStrokeWidth;
   final PageController controller;
 
-  const PageviewForm({
+  const FormPageView({
     Key? key,
     this.progress = ProgressIndicatorType.linear,
     required this.pages,
@@ -56,11 +56,11 @@ class PageviewForm extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _PageviewFormState createState() => _PageviewFormState();
+  _FormPageViewState createState() => _FormPageViewState();
 }
 
-// Définition de l'état du widget PageviewForm
-class _PageviewFormState extends State<PageviewForm> {
+// Définition de l'état du widget FormPageView
+class _FormPageViewState extends State<FormPageView> {
   // Index de la page actuelle
   int _currentPageIndex = 0;
 
