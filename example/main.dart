@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
         formKey: formKeyPage1,
         title: 'Page 1',
         textButton: 'Next',
-        form: Form(
+        body: Form(
           key: formKeyPage1,
           child: Column(
             children: [
@@ -73,7 +73,7 @@ class MyHomePage extends StatelessWidget {
         formKey: formKeyPage2,
         title: 'Page 2',
         textButton: 'Next',
-        form: Form(
+        body: Form(
           key: formKeyPage2,
           child: Column(
             children: [
@@ -107,7 +107,7 @@ class MyHomePage extends StatelessWidget {
         formKey: formKeyPage3,
         title: 'Page 3',
         textButton: 'Next',
-        form: Form(
+        body: Form(
           key: formKeyPage3,
           child: Column(
             children: [

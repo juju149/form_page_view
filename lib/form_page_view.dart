@@ -12,6 +12,8 @@ class FormPageView extends StatefulWidget {
   final ProgressIndicatorType? progress;
   final List<FormPageModel> pages;
   final Function() onFormSubmitted;
+  final bool? showAppBar;
+  final bool? showBackButton;
   final EdgeInsetsGeometry? contentPadding;
   final EdgeInsetsGeometry? buttonPadding;
   final EdgeInsetsGeometry? progressPadding;
@@ -28,6 +30,8 @@ class FormPageView extends StatefulWidget {
     this.buttonPadding,
     this.progressPadding,
     this.style,
+    this.showAppBar,
+    this.showBackButton,
   }) : super(key: key);
 
   @override
@@ -85,15 +89,14 @@ class _FormPageViewState extends State<FormPageView> {
     // Construction de l'interface utilisateur du widget
     return Scaffold(
       backgroundColor: widget.style?.backgroundColor ?? Colors.white,
-      appBar: widget.style?.showAppBar != null
+      appBar: widget.showAppBar != null
           ? AppBar(
               centerTitle: widget.style?.appBarCenterTitle ?? false,
               elevation: widget.style?.appBarElevation ?? 4,
               backgroundColor:
                   widget.style?.appBarBackgroundColor ?? Colors.white,
               toolbarHeight: widget.style?.appBarHeight ?? 56,
-              leading: widget.style?.showBackButton != null &&
-                      widget.style!.showBackButton!
+              leading: widget.showBackButton != null
                   ? IconButton(
                       onPressed: () {
                         if (_currentPageIndex > 0) {
@@ -196,7 +199,7 @@ class _FormPageViewState extends State<FormPageView> {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: widget.contentPadding ?? const EdgeInsets.all(16),
-                  child: widget.pages[index].form,
+                  child: widget.pages[index].body,
                 );
               },
             ),

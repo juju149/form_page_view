@@ -47,7 +47,7 @@ Create a list of page models (**'FormPageModel'**) to define the pages in your f
 final List<FormPageModel> pages = [
   FormPageModel(
     formKey: GlobalKey<FormState>(),
-    form: YourFormWidget(),
+    body: YourFormWidget(),
     title: 'Page 1',
     textButton: 'Next',
   ),
@@ -76,31 +76,18 @@ FormPageView(
 
 Refer to the provided usage **'examples'** in the example folder for more details.
 
-## Parameters
+## Properties
 
-| Parameter | Type | Description |
+| Property | Type | Description |
 |-----------|------|-------------|
 | progress | ProgressIndicatorType? | Optional. Specifies the type of progress indicator to use. Default is `ProgressIndicatorType.linear`. |
 | pages | List\<PageModel> | Required. The list of page models that define the pages in the form. |
 | onFormSubmitted | Function() | Required. The function to execute when the form is submitted. |
-| padding | EdgeInsetsGeometry? | Optional. The padding around the form widget. |
-| backgroundColor | Color? | Optional. The background color of the form widget. |
-| buttonStyle | ButtonStyle? | Optional. The style of the button widget. |
-| buttonHeight | double? | Optional. The height of the button widget. Default is `50`. |
-| buttonWidth | double? | Optional. The width of the button widget. Default is `double.infinity`. |
-| buttonTextStyle | TextStyle? | Optional. The text style of the button widget. |
-| showAppBar | bool? | Optional. Specifies whether to show the app bar. Default is `true`. |
-| showBackButton | bool? | Optional. Specifies whether to show the back button on the app bar. Default is `true`. |
-| appBarCenterTitle | bool? | Optional. Specifies whether to center the title on the app bar. Default is `false`. |
-| appBarElevation | double? | Optional. The elevation of the app bar. Default is `4`. |
-| appBarBackgroundColor | Color? | Optional. The background color of the app bar. Default is `Colors.white`. |
-| appBarHeight | double? | Optional. The height of the app bar. Default is `56`. |
-| progressIndicatorColor | Color? | Optional. The color of the progress indicator. If not specified, it uses the primary color of the theme. |
-| progressIndicatorBackgroundColor | Color? | Optional. The background color of the progress indicator. Default is `Colors.grey[300]`. |
-| progressIndicatorSize | double? | Optional. The size of the progress indicator. Default is `40`. |
-| progressIndicatorStrokeWidth | double? | Optional. The stroke width of the progress indicator. Default is `4`. |
 | controller | PageController | Required. The page controller for controlling the navigation in the pages. |
-
+| contentPadding | EdgeInsetsGeometry? | Optional. The padding of the content of the form pages. Default is `EdgeInsets.all(16)`. |
+| buttonPadding | EdgeInsetsGeometry? | Optional. The padding of the page navigation button. Default is `EdgeInsets.all(16)`. |
+| progressPadding | EdgeInsetsGeometry? | Optional. The padding of the progress indicator. Default is `EdgeInsets.all(8.0)`. |
+| style | FormPageStyle? | Optional. A FormPageStyle object to customize the appearance and behavior of the form. |
 
 ## Customization
 
@@ -108,36 +95,45 @@ Refer to the provided usage **'examples'** in the example folder for more detail
 
 You can customize the form widget by providing the following parameters:
 
-- **'padding'**: The padding around the form widget.
-- **'backgroundColor'**: The background color of the form widget.
+- **'contentPadding'**: The padding of the content of the form pages. Default is `EdgeInsets.all(16)`.
+- **'buttonPadding'**: The padding of the page navigation button. Default is `EdgeInsets.all(16)`.
+- **'progressPadding'**: The padding of the progress indicator. Default is `EdgeInsets.all(8.0)`.
+- **'style'**: A **FormPageStyle** object to customize the appearance and behavior of the form.
 
-### App bar
+### Form Page Style
+
+You can customize the form page style by providing a **'FormPageStyle'** object to the **'style'** parameter. The following parameters are available:
+
+- **'backgroundColor'**: The background color of the form pages. Default is `Colors.white`.
+
+#### App bar
 
 You can customize the app bar by providing the following parameters:
 
-- **'showAppBar'**: Specifies whether to show the app bar. Default is `true`.
-- **'showBackButton'**: Specifies whether to show the back button on the app bar. Default is `true`.
 - **'appBarCenterTitle'**: Specifies whether to center the title on the app bar. Default is `false`.
-- **'appBarElevation'**: The elevation of the app bar. Default is `4`.
+- **'appBarElevation'**: The elevation of the app bar. Default is `4.0`.
 - **'appBarBackgroundColor'**: The background color of the app bar. Default is `Colors.white`.
-- **'appBarHeight'**: The height of the app bar. Default is `56`.
+- **'appBarHeight'**: The height of the app bar. Default is `56.0`.
+- **'appBarTextStyle'**: The text style of the app bar title. Default is `TextStyle(color: Colors.black)`.
 
-### Progress indicator
+#### Progress indicator
 
-You can customize the progress indicator by providing a **'ProgressIndicatorType'** to the **'progress'** parameter. The following types are available:
+You can customize the progress indicator by providing the following parameters:
 
-- **ProgressIndicatorType.linear**: A linear progress indicator that fills the progress bar as the user navigates between pages.
-- **ProgressIndicatorType.circular**: A circular progress indicator that fills the progress bar as the user navigates between pages.
+- **'progressIndicatorColor'**: The color of the progress indicator. Default is `Colors.blue`.
+- **'progressIndicatorBackgroundColor'**: The background color of the progress indicator. Default is `Colors.grey`.
+- **'progressIndicatorSize'**: The size of the progress indicator. Default is `48.0`.
+- **'progressIndicatorStrokeWidth'**: The stroke width of the progress indicator. Default is `4.0`.
 
-### Button widget
+#### Button widget
 
-You can customize the button widget by providing a **'ButtonStyle'** to the **'buttonStyle'** parameter. This allows you to customize the button widget with any style you want.
+You can customize the button widget by providing the following parameters:
 
-You can also customize the button widget by providing the following parameters:
-
-- **'buttonHeight'**: The height of the button widget. Default is `50`.
-- **'buttonWidth'**: The width of the button widget. Default is `double.infinity`.
-- **'buttonTextStyle'**: The text style of the button widget.
+- **'buttonStyle'**: The style of the page navigation button. Default is `ElevatedButton.styleFrom(primary: Colors.blue)`.
+- **'buttonHeight'**: The height of the page navigation button. Default is `48`.
+- **'buttonWidth'**: The width of the page navigation button. Default is `double.infinity`.
+- **'buttonTextStyle'**: The text style of the page navigation button. Default is `TextStyle(color: Colors.white)`.
+- **'backButtonIcon'**: The icon of the back button. Default is `Icons.arrow_back`.
 
 ## Authors
 

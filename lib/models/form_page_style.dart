@@ -8,8 +8,6 @@ class FormPageStyle {
   final double? buttonHeight;
   final double? buttonWidth;
   final TextStyle? buttonTextStyle;
-  final bool? showAppBar;
-  final bool? showBackButton;
   final bool? appBarCenterTitle;
   final double? appBarElevation;
   final Color? appBarBackgroundColor;
@@ -24,8 +22,6 @@ class FormPageStyle {
   const FormPageStyle({
     this.backgroundColor,
     this.buttonStyle,
-    this.showAppBar,
-    this.showBackButton,
     this.buttonHeight,
     this.buttonWidth,
     this.buttonTextStyle,

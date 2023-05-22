@@ -6,7 +6,7 @@ class FormPageModel {
   final String? title;
 
   /// The form widget for this page.
-  final Widget form;
+  final Widget body;
 
   /// The text displayed on the button for this page.
   final String? textButton;
@@ -26,14 +26,14 @@ class FormPageModel {
   /// Creates a new instance of [FormPageModel].
   ///
   /// [title] (optional) - The title of the page.
-  /// [form] (required) - The form widget for this page.
+  /// [body] (required) - The form widget for this page.
   /// [textButton] (optional) - The text displayed on the button for this page.
   /// [onPressed] (optional) - The callback function executed when the button is pressed.
   /// [buttonStyle] (optional) - The style applied to the button.
   /// [formKey] (optional) - The key for the form.
   FormPageModel({
     this.title,
-    required this.form,
+    required this.body,
     this.textButton,
     this.onPressed,
     this.buttonStyle,
