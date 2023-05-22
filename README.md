@@ -1,6 +1,6 @@
-# Pageview Form
+# Form Page View
 
-Pageview Form is a Flutter package that allows you to create a form with a page view and a progress bar. This package makes it easy to create interactive and customizable forms with seamless navigation between pages.
+Form Page View is a Flutter package that allows you to create a form with a page view and a progress bar. This package makes it easy to create interactive and customizable forms with seamless navigation between pages.
 
 ## Demo
 
